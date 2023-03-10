@@ -1,6 +1,13 @@
 ###### Lebada Daria-Cristiana 323CA
 ## Loader de executabile
 
+#### Explicatii ierarhie fisiere:
+- in skel-lin se gaseste scheletul de cod
+- in checker-lin se gaseste checkerul (pentru Linux)
+#### Implementarea propriu-zisa:
+- skel-lin/loader/loader.c
+
+### Descrierea implementarii:
 Se doreste implementarea unui loader de fisiere executabile in
 format ELF pentru Linux sub forma unei biblioteci dinamice.
 Implementez o functie de tip handler prin care voi trata page
