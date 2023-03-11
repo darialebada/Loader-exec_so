@@ -17,6 +17,7 @@ static so_exec_t *exec;
 static struct sigaction default_handler;
 static int fd;
 
+/* my code */
 static void segv_handler(int signum, siginfo_t *info, void *context)
 {
 	/* address at which fault occurred */
@@ -99,6 +100,7 @@ static void segv_handler(int signum, siginfo_t *info, void *context)
 	default_handler.sa_sigaction(signum, info, context);
 }
 
+/* skeleton provided by the Operating System team */
 int so_init_loader(void)
 {
 	int rc;
